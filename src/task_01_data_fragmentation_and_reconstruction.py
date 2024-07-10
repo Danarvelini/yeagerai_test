@@ -9,7 +9,7 @@ def simple_hash(data: str):
     return hash_value[:30]
 
 
-def reconstruct_data(fragments: dict):
+def reconstruct_data(fragments: dict) -> str:
     """Method to verify the integrity of each fragment using its
     corresponding hash value prior to the reconstruction"""
 
