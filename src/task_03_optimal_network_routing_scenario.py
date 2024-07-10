@@ -12,8 +12,6 @@ def find_minimum_latency_path(graph, compression_nodes, source, target):
     while to_visit:
         current_time, node, compression_used = heappop(to_visit)
 
-        print("HERE!")  # FIXME
-
         # If we've reached the destinatoin, return the time it took
         if node == target:
             return current_time
@@ -22,8 +20,6 @@ def find_minimum_latency_path(graph, compression_nodes, source, target):
             time_to_neighbor = current_time + travel_time
 
             if time_to_neighbor < visited[(neighbor, compression_used)]:
-                print("HERE 2!")  # FIXME
-
                 visited[(neighbor, compression_used)] = time_to_neighbor
                 heappush(to_visit, (time_to_neighbor, neighbor, compression_used))
 
