@@ -1,0 +1,7 @@
+# Formatting
+.trunk
+.trunk/
+
+# VsCode
+.vscode
+.vscode/
